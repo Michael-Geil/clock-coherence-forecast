@@ -18,13 +18,10 @@ def run(cmd):
 def main():
 
     # 1) Scrape Circular-T data
-    run([sys.executable, "scrape_circularT.py"])
+    run([sys.executable, "scrape_circularT_html.py"])
 
-    # 2) Run phase extraction + forecasting
+    # 2) Run phase extraction + forecasting + surrogate tests
     run([sys.executable, "analysis.py"])
-
-    # 3) Run surrogate null models
-    run([sys.executable, "surrogates.py"])
 
     print("\nAll analyses complete.")
     print("Figures saved to figures/")
