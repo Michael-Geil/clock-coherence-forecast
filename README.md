@@ -53,7 +53,7 @@ All random seeds are fixed.
 All hyperparameters are hard-coded.
 The full pipeline runs deterministically.
 
-```markdown
+
 ## Repository Structure
 
 run_all.py              # Master script reproducing all results  
